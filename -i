@@ -1,0 +1,23 @@
+--> Found image 8805567 (7 weeks old) in image stream "openshift/nodejs" under tag "12" for "nodejs:12"
+
+    Node.js 12 
+    ---------- 
+    Node.js 12 available as container is a base platform for building and running various Node.js 12 applications and frameworks. Node.js is a platform built on Chrome's JavaScript runtime for easily building fast, scalable network applications. Node.js uses an event-driven, non-blocking I/O model that makes it lightweight and efficient, perfect for data-intensive real-time applications that run across distributed devices.
+
+    Tags: builder, nodejs, nodejs12
+
+    * The source repository appears to match: nodejs
+    * A source build using source code from https://github.com/bouskam1/DO180-apps#troubleshoot-review will be created
+      * The resulting image will be pushed to image stream tag "nodejs-dev:latest"
+      * Use 'oc start-build' to trigger a new build
+
+--> Creating resources ...
+    imagestream.image.openshift.io "nodejs-dev" created
+    buildconfig.build.openshift.io "nodejs-dev" created
+    deployment.apps "nodejs-dev" created
+    service "nodejs-dev" created
+--> Success
+    Build scheduled, use 'oc logs -f buildconfig/nodejs-dev' to track its progress.
+    Application is not exposed. You can expose services to the outside world by executing one or more of the commands below:
+     'oc expose service/nodejs-dev' 
+    Run 'oc status' to view your app.
